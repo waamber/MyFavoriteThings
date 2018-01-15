@@ -4,18 +4,11 @@ namespace MyFavoriteThings
 {
     class Food
     {
-
-        static void Main(string[] args)
-        {
-            var food = new Food();
-            food.Dinner("burritos");
-            food.Place("Does McDonald's have both?");  
-        }
-
+    
+        var salsa = new FoodType(hispanic);
+      
         protected string _tacos;
         protected string _burgers;
-        public string cookOut;
-
 
         public string Burgers
         {
@@ -42,16 +35,18 @@ namespace MyFavoriteThings
             }
         }
 
-        public string Place(string place)
-        {
-           return place = cookOut;  
-        }
+       public FoodType(string foodType)
+       {
+           Type = foodType;     
+       }
+       
+       public printFood(string food)
+       {
+           Console.WriteLine(food);
+       }
 
-        public bool Dinner(string tacos)
-        {
-            _tacos = tacos;
-            return true;
-        }
+   
+
 
     }
 }

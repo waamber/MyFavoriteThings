@@ -7,6 +7,8 @@ namespace MyFavoriteThings
         static void Main(string[] args)
         {
             var crafts = new Crafts();
+            Crafts.crafts("Amber");
+            Console.ReadKey();
         }
 
         protected string _knitting;
@@ -16,7 +18,7 @@ namespace MyFavoriteThings
         {
             get
             {
-                return _knitting;
+       
             }
             set
             {
@@ -36,16 +38,17 @@ namespace MyFavoriteThings
             }
         }
 
-        public bool Thread(string thread)
+       public Crafts(string name)
         {
-            thread = _crossStitching;
-            return true;
-        }
+            Name = name;
+        } 
 
-        public string Patience()
-        {
-            return ("This takes time.");
-        }
+        public Crafts(string name)
+            {
+              Console.WriteLine(name);
+            }
+
+      
         
     }
 }
