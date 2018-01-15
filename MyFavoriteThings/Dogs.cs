@@ -3,12 +3,10 @@
 namespace MyFavoriteThings
 {
     class Dogs
-    {
-        static void Main(string[] args)
-        {
-            var dog = new Dogs();
-        }
-
+    {   
+        var same = new Dogs("Sam", "Beagle");
+        
+       
         protected string _puggys;
         protected string _terriers;
 
@@ -34,18 +32,24 @@ namespace MyFavoriteThings
             {
                 _terriers = value;
             }
+        }   
+    }
+     public class Doggie
+     {
+        public string Name { get; set; }
+        public string Breed {get; set;}
+
+        public Dogs(string dogName, string dogBreed)
+        {
+            Name = dogName;
+            Breed = dogBreed;
         }
 
-        public bool Type(string goodBoy)
+        public printDogs()
         {
-            return true;
+            Console.Write(Dogs.Name);
         }
-
-        public bool Name(string name)
-        {
-            _puggys = name;
-            return false;
-        }
-    } 
+     }
+        
 }
 
