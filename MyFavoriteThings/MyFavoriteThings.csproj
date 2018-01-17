@@ -42,7 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Crafts.cs" />
+    <Compile Include="Cheese.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="Dogs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
