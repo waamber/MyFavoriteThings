@@ -4,9 +4,6 @@ namespace MyFavoriteThings
 {
     class Dogs
     {   
-        var same = new Dogs("Sam", "Beagle");
-        
-       
         protected string _puggys;
         protected string _terriers;
 
@@ -39,16 +36,6 @@ namespace MyFavoriteThings
         public string Name { get; set; }
         public string Breed {get; set;}
 
-        public Dogs(string dogName, string dogBreed)
-        {
-            Name = dogName;
-            Breed = dogBreed;
-        }
-
-        public printDogs()
-        {
-            Console.Write(Dogs.Name);
-        }
      }
         
 }
