@@ -4,39 +4,54 @@ namespace MyFavoriteThings
 {
     class Dogs
     {   
-        protected string _puggys;
-        protected string _terriers;
+        protected string _breed;
+        protected string _name;
+        protected bool _goodDoge;
 
-        public string Puggys
+        public string Breed
         {
             get
             {
-                return _puggys;
+                return _breed;
             }
             set
             {
-                _puggys = value;
+                _breed = value;
             }
         }
 
-        public string Terriers
+        public string Name
         {
             get
             {
-                return _terriers;
+                return _name;
             }
             set
             {
-                _terriers = value;
+                _name = value;
             }
-        }   
-    }
-     public class Doggie
-     {
-        public string Name { get; set; }
-        public string Breed {get; set;}
-
-     }
+        }  
         
+        public bool GoodDoge
+        {
+            get
+            {
+                return _goodDoge;
+            }
+            set
+            {
+                _goodDoge = value;
+            }
+        }
+
+        public string HiDoggie(string breed, string name, bool goodDoge)
+        {
+            if(goodDoge == true)
+            {
+                return $"{name} is a {breed} and he is the very best boy.";
+            }
+            return $"{name} is a {breed} and he is such a naughty boy.";
+        }
+    }     
 }
 

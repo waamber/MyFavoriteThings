@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFavoriteThings
 {
-    class Cheese
+    class Drinks
     {
         public string Name { get; set; }
         public string Type { get; set; }
