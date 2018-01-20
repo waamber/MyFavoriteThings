@@ -51,7 +51,14 @@ namespace MyFavoriteThings
             {
                 Console.WriteLine(doge.HiDoggie(doge.Breed, doge.Name, doge.GoodDoge));
             }
-            
+
+            var shows = new Netflix()
+            {
+                Genre= "comedies",
+                Title= "The Office"
+            };
+
+            Console.WriteLine(shows.Watch(shows.Genre, shows.Title));
 
             Console.ReadLine();
         }   
